@@ -1,2 +1,1 @@
-# json-crud
-PHP CRUD A
+# PHP CRUD app using JSON
