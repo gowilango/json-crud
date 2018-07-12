@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_GET["id"])) {
     $id = (int) $_GET["id"];
     $all = file_get_contents('data.json');
@@ -14,3 +13,4 @@ if (isset($_GET["id"])) {
     }
     header("Location: index.php");
 }
+?>

@@ -31,12 +31,41 @@ if (isset($_POST["id"])) {
 }
 ?>
 <?php if (isset($_GET["id"])): ?>
-    <form action="edit.php" method="POST">
-        <input type="hidden" value="<?php echo $id ?>" name="id"/>
-        <input type="text" value="<?php echo $jsonfile["title"] ?>" name="title"/>
-        <input type="text" value="<?php echo $jsonfile["desc"] ?>" name="desc"/>
-        <input type="text" value="<?php echo $jsonfile["link"] ?>" name="link"/>
-        <input type="text" value="<?php echo $jsonfile["date"] ?>" name="date"/>
-        <input type="submit"/>
-    </form>
+<html>
+	<head>
+		<title>Edit ID: <?php echo $id ?></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	</head>
+	
+<body style="background-color: black;">
+
+<style> *{color: ;} </style>
+
+<div class="container"><br><br><br>
+<form action="edit.php" method="POST">
+  <div class="form-row">
+   <input type="hidden" value="<?php echo $id ?>" name="id"/>
+    <div class="col-5">
+      <input type="text" class="form-control" placeholder="title" value="<?php echo $jsonfile["title"] ?>" name="title"/>
+    </div><br><br>
+    <div class="col-7">
+      <input type="text" class="form-control" placeholder="desc" value="<?php echo $jsonfile["desc"] ?>" name="desc"/>
+    </div><br><br>
+    <div class="col-7">
+      <input type="text" class="form-control" placeholder="link" value="<?php echo $jsonfile["link"] ?>" name="link"/>
+    </div><br><br>
+    <div class="col-5">
+      <input type="text" class="form-control" placeholder="date" value="<?php echo $jsonfile["date"] ?>" name="date"/> 
+    </div>
+    <div class="col-auto my-1">
+      <input class="btn btn-outline-warning" value="Update" type="submit"/>
+    </div>
+    <div class="col-auto my-1">
+	  <a href="index.php" class="btn btn-outline-danger">Cancel</a>
+    </div>
+	</div>
+</form>
 <?php endif; ?>
+</div>
+</body>
+</html>
