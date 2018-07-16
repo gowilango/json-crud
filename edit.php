@@ -36,7 +36,7 @@ if (isset($_POST["id"])) {
 		<title>Edit ID: <?php echo $id+1 ?></title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	</head>
-	
+
 <body style="background-color: black;">
 
 <style> *{color: white;} </style>
@@ -58,7 +58,7 @@ if (isset($_POST["id"])) {
       <input type="text" class="form-control" placeholder="link" value="<?php echo $jsonfile["link"] ?>" name="link"/>
     </div><br>
     <div class="col-7">
-      <input type="text" class="form-control" placeholder="date" value="<?php echo $jsonfile["date"] ?>" name="date"/> 
+      <input type="text" class="form-control" placeholder="date" value="<?php echo $jsonfile["date"] ?>" name="date"/>
     </div><br>
     <div class="col-auto">
       <input class="btn btn-outline-warning" value="Update" type="submit"/> <a href="index.php" class="btn btn-outline-danger">Cancel</a>
