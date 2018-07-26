@@ -1,1 +1,10 @@
-{"datalist":[{"title":"Google","desc":"search engine","link":"https:\/\/google.com","date":"01\/01\/2000"}]}
+{
+    "datalist": [
+        {
+            "title": "Google",
+            "desc": "search engine",
+            "link": "google.com",
+            "date": "01\/01\/2000"
+        }
+    ]
+}

@@ -24,7 +24,7 @@
       <input type="text" class="form-control" placeholder="link" name="link"/>
     </div><br>
     <div class="col-7">
-      <input type="text" class="form-control" placeholder="date" name="date"/> 
+      <input type="text" class="form-control" placeholder="date" name="date"/>
     </div><br>
 	<div class="col-auto">
       <input class="btn btn-outline-primary" value="Add" type="submit" name="add"/>
